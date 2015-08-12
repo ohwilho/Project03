@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Portuguese Verbs</title>
+	<link rel="stylesheet" href="project01.css">
+	<link type="text/css" rel="stylesheet" href="materialize.min.css"  media="screen,projection"/>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+</head>
+<body>
+	<div class="container">
+		<div class="header">
+			<img src="images/Garota-De-Ipanema-web.jpg" alt="" class="header">
+		</div>
+
+		<div class="content">
+			<div class="row">
+				<div class="col s12">
+					<ul class="tabs">
+						<li class="tab col s3"><a class="ar">Verbos Regulares -AR</a></li>
+						<li class="tab col s3"><a class="er">Verbos Regulares -ER</a></li>
+						<li class="tab col s3"><a href="#ir" class="ir">Verbos Regulares -IR</a></li>
+						<!-- <li class="tab col s3"><a href="#irregulares">Verbos Irregulares</a></li> -->
+					</ul>
+				</div>
+
+				<div class="table col s12" id="blank">
+					<table>
+						<tr>
+							<td class="verb"></td>
+							<td class="verb">Presente</td>
+							<td class="verb">Pretereito Perfeito</td>
+							<td class="verb">Pretereito Imperfeito</td>
+							<td class="verb">Futuro</td>
+							<td class="verb">Presente Continuo</td>
+							<td class="verb">Imperativo</td>
+						</tr>
+						<tr>
+							<td>Eu</td>
+							<td class="pt-en"></td>
+							<td class="pt-en"></td>
+							<td class="pt-en"></td>
+							<td class="pt-en"></td>
+							<td class="pt-en"></td>
+							<td class="pt-en"></td>
+						</tr>
+						<tr>
+							<td>Você / Ele / Ela</td>
+							<td class="pt-en"></td>
+							<td class="pt-en"></td>
+							<td class="pt-en"></td>
+							<td class="pt-en"></td>
+							<td class="pt-en"></td>
+							<td class="pt-en"></td>
+						</tr>
+						<tr>
+							<td>Nós</td>
+							<td class="pt-en"></td>
+							<td class="pt-en"></td>
+							<td class="pt-en"></td>
+							<td class="pt-en"></td>
+							<td class="pt-en"></td>
+							<td class="pt-en"></td>
+						</tr>
+						<tr>
+							<td>Vocês / Eles / Elas</td>
+							<td class="pt-en"></td>
+							<td class="pt-en"></td>
+							<td class="pt-en"></td>
+							<td class="pt-en"></td>
+							<td class="pt-en"></td>
+							<td class="pt-en"></td>
+						</tr>
+					</table>
+				</div>
+
+				<div id="ar" class="col s12 verbos">
+					<table>
+						<tr>
+							<td class="verb">—
+								<p class="ar">AR</p>
+<!-- 								<p class="er">ER</p>
+								<p class="ir">IR</p> -->
+							</td>
+							<td class="verb"></td>
+							<td class="verb"></td>
+							<td class="verb"></td>
+							<td class="verb"></td>
+							<td class="verb"></td>
+							<td class="verb"></td>
+						</tr>
+						<tr>
+							<td class="verb"></td>
+							<td class="pt-en">falo <div class="tooltip">I speak</div></td>
+							<td class="pt-en">falei <div class="tooltip">I spoke</div></td>
+							<td class="pt-en">falava <div class="tooltip">I have spoken</div></td>
+							<td class="pt-en">vou falar <div class="tooltip">I am going to speak</div></td>
+							<td class="pt-en">estou falando <div class="tooltip">I am speaking</div></td>
+							<td class="pt-en">-</td>
+						</tr>
+						<tr>
+							<td class="verb"></td>
+							<td class="pt-en">fala <div class="tooltip">You speak</div></td>
+							<td class="pt-en">falou <div class="tooltip">You spoke</div></td>
+							<td class="pt-en">falava <div class="tooltip">You had spoken</div></td>
+							<td class="pt-en">vai falar <div class="tooltip">You is going to speak</div></td>
+							<td class="pt-en">está falando <div class="tooltip">You is speaking</div></td>
+							<td class="pt-en">fale <div class="tooltip">Speak!</div></td>
+						</tr>
+						<tr>
+							<td class="verb"></td>
+							<td class="pt-en">falamos <div class="tooltip">We speak</div></td>
+							<td class="pt-en">falamos <div class="tooltip">We spoke</div></td>
+							<td class="pt-en">falávamos <div class="tooltip">We had spoken</div></td>
+							<td class="pt-en">vamos falar <div class="tooltip">We are going to speak</div></td>
+							<td class="pt-en">estamos falando <div class="tooltip">We are speaking</div></td>
+							<td class="pt-en">falemos <div class="tooltip">Speak!</div></td>
+						</tr>
+						<tr>
+							<td class="verb"></td>
+							<td class="pt-en">falam <div class="tooltip">They speak</div></td>
+							<td class="pt-en">falaram <div class="tooltip">They spoke</div></td>
+							<td class="pt-en">falavam <div class="tooltip">They have spoken</div></td>
+							<td class="pt-en">vão falar <div class="tooltip">They are going to speak</div></td>
+							<td class="pt-en">estão falando <div class="tooltip">They are speaking</div></td>
+							<td class="pt-en">falem <div class="tooltip">Speak!</div></td>
+						</tr>
+					</table>
+				</div>
+
+				<div id="er" class="col s12 verbos">
+					<table>
+						<tr>
+							<td class="verb">—ER</td>
+							<td class="verb"></td>
+							<td class="verb"></td>
+							<td class="verb"></td>
+							<td class="verb"></td>
+							<td class="verb"></td>
+							<td class="verb"></td>
+						</tr>
+						<tr>
+							<td class="verb"></td>
+							<td class="pt-en">aprendo <div class="tooltip">I learn</div></td>
+							<td class="pt-en">aprendi <div class="tooltip">I learn</div></td>
+							<td class="pt-en">aprendia <div class="tooltip">I learn</div></td>
+							<td class="pt-en">vou aprender <div class="tooltip">I learn</div></td>
+							<td class="pt-en">estou aprendendo <div class="tooltip">I learn</div></td>
+							<td class="pt-en">-</td>
+						</tr>
+						<tr>
+							<td class="verb"></td>
+							<td class="pt-en">aprende <div class="tooltip">I learn</div></td>
+							<td class="pt-en">aprendeu <div class="tooltip">I learn</div></td>
+							<td class="pt-en">aprendia <div class="tooltip">I learn</div></td>
+							<td class="pt-en">vai aprender <div class="tooltip">I learn</div></td>
+							<td class="pt-en">está apredendo <div class="tooltip">I learn</div></td>
+							<td class="pt-en">aprenda <div class="tooltip">I learn</div></td>
+						</tr>
+						<tr>
+							<td class="verb"></td>
+							<td class="pt-en">aprendemos <div class="tooltip">I learn</div></td>
+							<td class="pt-en">aprendemos <div class="tooltip">I learn</div></td>
+							<td class="pt-en">aprendiámos <div class="tooltip">I learn</div></td>
+							<td class="pt-en">vamos aprender <div class="tooltip">I learn</div></td>
+							<td class="pt-en">estamos apredendo</td>
+							<td class="pt-en">aprendemos</td>
+						</tr>
+						<tr>
+							<td class="verb"></td>
+							<td class="pt-en">aprendem <div class="tooltip">I learn</div></td>
+							<td class="pt-en">aprenderam <div class="tooltip">I learn</div></td>
+							<td class="pt-en">aprendiam <div class="tooltip">I learn</div></td>
+							<td class="pt-en">vão aprender <div class="tooltip">I learn</div></td>
+							<td class="pt-en">estão apredendo <div class="tooltip">I learn</div></td>
+							<td class="pt-en">aprendem <div class="tooltip">I learn</div></td>
+						</tr>
+					</table>
+				</div>
+
+				<div id="ir" class="col s12 verbos">
+					<table>
+						<tr>
+							<td class="verb">—IR</td>
+							<td class="verb"></td>
+							<td class="verb"></td>
+							<td class="verb"></td>
+							<td class="verb"></td>
+							<td class="verb"></td>
+							<td class="verb"></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td class="pt-en">parto <div class="tooltip">I learn</div></td>
+							<td class="pt-en">parti <div class="tooltip">I learn</div></td>
+							<td class="pt-en">partia <div class="tooltip">I learn</div></td>
+							<td class="pt-en">vou partir <div class="tooltip">I learn</div></td>
+							<td class="pt-en">estou partindo <div class="tooltip">I learn</div></td>
+							<td class="pt-en">-</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td class="pt-en">aprende <div class="tooltip">I learn</div></td>
+							<td class="pt-en">aprendeu <div class="tooltip">I learn</div></td>
+							<td class="pt-en">aprendia <div class="tooltip">I learn</div></td>
+							<td class="pt-en">vai aprender <div class="tooltip">I learn</div></td>
+							<td class="pt-en">está apredendo <div class="tooltip">I learn</div></td>
+							<td class="pt-en">aprenda <div class="tooltip">I learn</div></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td class="pt-en">aprendemos <div class="tooltip">I learn</div></td>
+							<td class="pt-en">aprendemos <div class="tooltip">I learn</div></td>
+							<td class="pt-en">aprendiámos <div class="tooltip">I learn</div></td>
+							<td class="pt-en">vamos aprender <div class="tooltip">I learn</div></td>
+							<td class="pt-en">estamos apredendo <div class="tooltip">I learn</div></td>
+							<td class="pt-en">aprendemos <div class="tooltip">I learn</div></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td class="pt-en">aprendem <div class="tooltip">I learn</div></td>
+							<td class="pt-en">aprenderam <div class="tooltip">I learn</div></td>
+							<td class="pt-en">aprendiam <div class="tooltip">I learn</div></td>
+							<td class="pt-en">vão aprender <div class="tooltip">I learn</div></td>
+							<td class="pt-en">estão apredendo <div class="tooltip">I learn</div></td>
+							<td class="pt-en">aprendem <div class="tooltip">I learn</div></td>
+						</tr>
+					</table>
+				</div>
+
+				<!-- <div id="irregulares" class="col s12 verbos">Test 4</div> -->
+
+			</div>
+
+<!-- 			<div class="table">
+				<table>
+					<tr>
+						<td class="verb"></td>
+						<td class="verb">Presente</td>
+						<td class="verb">Pretereito Perfeito</td>
+						<td class="verb">Pretereito Imperfeito</td>
+						<td class="verb">Futuro</td>
+						<td class="verb">Presente Continuo</td>
+						<td class="verb">Imperativo</td>
+					</tr>
+					<tr>
+						<td>Eu</td>
+						<td class="pt-en"></td>
+						<td class="pt-en"></td>
+						<td class="pt-en"></td>
+						<td class="pt-en"></td>
+						<td class="pt-en"></td>
+						<td class="pt-en"></td>
+					</tr>
+					<tr>
+						<td>Você / Ele / Ela</td>
+						<td class="pt-en"></td>
+						<td class="pt-en"></td>
+						<td class="pt-en"></td>
+						<td class="pt-en"></td>
+						<td class="pt-en"></td>
+						<td class="pt-en"></td>
+					</tr>
+					<tr>
+						<td>Nós</td>
+						<td class="pt-en"></td>
+						<td class="pt-en"></td>
+						<td class="pt-en"></td>
+						<td class="pt-en"></td>
+						<td class="pt-en"></td>
+						<td class="pt-en"></td>
+					</tr>
+					<tr>
+						<td>Vocês / Eles / Elas</td>
+						<td class="pt-en"></td>
+						<td class="pt-en"></td>
+						<td class="pt-en"></td>
+						<td class="pt-en"></td>
+						<td class="pt-en"></td>
+						<td class="pt-en"></td>
+					</tr>
+				</table>
+			</div> -->
+
+		</div>
+
+	</div>
+
+	<script>
+		$(document).ready(function(){
+		    $('.ar').click(function(){
+		    	$('.verbos').hide();
+		    	$('#blank table').height($('#ar').height());
+		    	$('#ar').toggle();
+		    });
+		    $('.er').click(function(){
+		    	$('.verbos').hide();
+		    	$('#blank table').height($('#er').height());
+		    	$('#er').toggle();
+		    });		    
+		    $('.ir').click(function(){
+		    	$('.verbos').hide();
+		    	$('#blank table').height($('#ir').height());
+		    	$('#ir').toggle();
+		    });
+		});
+	</script>
+
+</body>
+</html>

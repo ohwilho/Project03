@@ -1,0 +1,95 @@
+body {
+	height: 100vh;
+	width: 100vw;
+	margin: 0;
+	padding: 0;
+}
+
+#wrapper {
+	width: 100vw;
+	height: 100vh;
+	position: absolute;
+	top: 0;
+	left: 0;
+	overflow: hidden;
+	background-image: url(https://download.unsplash.com/photo-1429305336325-b84ace7eba3b);
+	background-size: 100% 100%;
+}
+
+	#mask {
+		width: 500vw;
+		height: 300vh;
+		/*background-image: url(https://download.unsplash.com/photo-1429305336325-b84ace7eba3b);*/
+	}
+
+	.item {
+		width: 20%;
+		height: 100%;
+		float: left;
+	}
+	
+	.content {
+		/*width: 400px;*/
+		/*height: 300px;*/
+		width: 50vw;
+		height: 50vh;
+		top: 25vh;
+		margin: 0 auto;
+		background-color: white;
+		position: relative;
+	}
+	
+	.selected {
+		background: #fff;
+		font-weight: 700;
+	}
+
+	.clear {
+		clear: both;
+	}
+
+/*div.welcome {
+	width: 100vw;
+	height: 100vh;
+	position: absolute;
+	background-color: black;
+	top: 0;
+	left: 0;
+}
+
+div.home {
+	width: 100vw;
+	height: 100vh;
+	position: absolute;
+	background-color: #BADA55;
+	top: 100vh;
+	left: 100vw;
+}
+
+div.signs {
+	width: 100vw;
+	height: 100vh;
+	position: absolute;
+	background-color: yellow;
+	top: 0;
+	left: calc(100vw * 2);
+	z-index: 1;
+}
+
+div.planets {
+	width: 100vw;
+	height: 100vh;
+	position: absolute;
+	background-color: red;
+	top: 100vh;
+	left: calc(100vw * 2);
+}
+
+div.houses {
+	width: 100vw;
+	height: 100vh;
+	position: absolute;
+	background-color: blue;
+	left: calc(100vw * 2);
+	top: calc(100vh * 2);
+}*/

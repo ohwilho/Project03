@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="diagonalScrollTest.css">
+	<title>Diagonal Scroll Test</title>
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery.scrollTo.js"></script>
+
+</head>
+<body>
+	<div id="wrapper">
+		<div id="mask">
+
+		<!-- first row -->
+
+			<div id="welcome" class="item welcome">
+				<a name="welcome"></a>
+				<div class="content">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique expedita, laborum, non labore consequatur voluptatibus inventore excepturi officia soluta assumenda aliquam veniam voluptate nihil nulla quo ducimus, rerum. Optio, et.</p>
+					<p><a href="#home" class="panel">Start</a></p> 
+				</div>
+			</div>
+			
+			<!-- start of blank div -->
+			<div class="item"></div>
+			<!-- end of blank div -->
+
+			<div id="signs" class="item signs">
+				<a name="signs"></a>
+				<div class="content">
+					<p>Signs</p>
+					<p><a href="#home" class="panel">back</a></p>
+				</div>
+			</div>
+
+			<div class="clear"></div>
+
+		<!-- second row -->		
+			
+			<!-- start of blank div -->
+			<div class="item"></div>
+			<!-- end of blank div -->
+
+			<div id="home" class="item home">
+				<a name="home"></a>
+				<div class="content">
+					<p>What do you want to learn today?</p>
+					<p><a href="#signs" class="panel">Signs</a></p>
+					<p><a href="#planets" class="panel">Planets</a></p>
+					<p><a href="#houses" class="panel">Houses</a></p>
+					<p><a href="#welcome" class="panel">back</a></p>
+				</div>
+			</div>
+
+			<div id="planets" class="item planets">
+				<a name="planets"></a>
+				<div class="content">
+					<p>Planets</p>
+					<p><a href="#home" class="panel">back</a></p>
+				</div>
+			</div>
+
+			<div class="clear"></div>
+			
+		<!-- third row -->
+
+			<div class="item"></div>
+			<div class="item"></div>
+
+			<div id="houses" class="item houses">
+				<a name="houses"></a>
+				<div class="content">
+					<p>Houses</p>
+					<p><a href="#home" class="panel">back</a></p>
+				</div>
+			</div>
+
+			<div class="clear"></div>
+
+		</div>
+	</div>
+
+	<script>
+		$(document).ready(function() {
+
+			//get all link with class panel
+			$('a.panel').click(function () {
+
+		                //reset and highlight the clicked link
+				$('a.panel').removeClass('selected');
+				$(this).addClass('selected');
+				
+				//grab the current item, to be used in resize function
+				current = $(this);
+				
+		                //scroll it to the destination
+				$('#wrapper').scrollTo($(this).attr('href'), 800);		
+				
+		                //cancel the link default behavior
+				return false;
+			});
+
+
+			//resize all the items according to the new browser size
+			$(window).resize(function () {
+				
+				//call the resizePanel function
+				resizePanel();
+			});
+			
+		});
+
+		function resizePanel() {
+
+			//get the browser width and height
+			width = $(window).width();
+			height = $(window).height();
+
+			//get the mask width: width * total of items
+			mask_width = width * $('.item').length;
+				
+			//set the dimension	
+			$('#wrapper, .item').css({width: width, height: height});
+			$('#mask').css({width: mask_width, height: height});
+			
+			//if the item is displayed incorrectly, set it to the corrent pos
+			$('#wrapper').scrollTo($('a.selected').attr('href'), 0);
+				
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width" />
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery.scrollTo.js"></script>
+
+	<title>Ex Animo Ad Astra</title>
+
+	<link rel="stylesheet" href="project02.css">
+</head>
+<body>
+	<div class="container02" id="wrapper">
+
+		<div class="item" id="mask">
+			<div class="intro">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique expedita, laborum, non labore consequatur voluptatibus inventore excepturi officia soluta assumenda aliquam veniam voluptate nihil nulla quo ducimus, rerum. Optio, et.</p>
+				<p><a href="#home">Start</a></p>
+			</div>
+		</div>
+
+		<div class="item"></div>
+
+		<div class="item" id="signs">
+			<div class="signsInfo Aries"></div>
+			<div class="signsInfo Taurus"></div>
+			<div class="signsInfo Gemini"></div>
+			<div class="signsInfo Cancer"></div>
+			<div class="signsInfo Leo"></div>
+			<div class="signsInfo Virgo"></div>
+			<div class="signsInfo Libra"></div>
+			<div class="signsInfo Scorpio"></div>
+			<div class="signsInfo Sagittarius"></div>
+			<div class="signsInfo Capricorn"></div>
+			<div class="signsInfo Aquarius"></div>
+			<div class="signsInfo Pisces"></div>
+		</div>
+
+		<div class="clear"></div>
+
+	<!-- Second Row -->
+
+		<div class="item"></div>
+
+		<div class="item" id-"home">
+			<div class="intro">
+				<a name="home"></a>
+				<div class="homeSigns">Signs</div>
+				<div class="homePlanets">Planets</div>
+				<div class="homeHouses">Houses</div>
+			</div>
+		</div>
+
+		<div class="item" id="planets">
+			<div class="planetsInfo Sun"></div>
+			<div class="planetsInfo Moon"></div>
+			<div class="planetsInfo Rising"></div>
+			<div class="planetsInfo Mercury"></div>
+			<div class="planetsInfo Venus"></div>
+			<div class="planetsInfo Mars"></div>
+			<div class="planetsInfo Jupiter"></div>
+			<div class="planetsInfo Saturn"></div>
+			<div class="planetsInfo Neptune"></div>
+			<div class="planetsInfo Uranus"></div>
+			<div class="planetsInfo Pluto"></div>
+		</div>
+		<div class="item" id="houses">
+			<div class="housesInfo First"></div>
+			<div class="housesInfo Second"></div>
+			<div class="housesInfo Third"></div>
+			<div class="housesInfo Fourth"></div>
+			<div class="housesInfo Fifth"></div>
+			<div class="housesInfo Sixth"></div>
+			<div class="housesInfo Seventh"></div>
+			<div class="housesInfo Eighth"></div>
+			<div class="housesInfo Ninth"></div>
+			<div class="housesInfo Tenth"></div>
+			<div class="housesInfo Eleventh"></div>
+			<div class="housesInfo Twelfth"></div>
+		</div>
+	</div>
+
+	<script>
+		$(document).ready(function() {
+
+			//get all link with class panel
+			$('a.panel').click(function () {
+
+		                //reset and highlight the clicked link
+				$('a.panel').removeClass('selected');
+				$(this).addClass('selected');
+				
+				//grab the current item, to be used in resize function
+				current = $(this);
+				
+		                //scroll it to the destination
+				$('#wrapper').scrollTo($(this).attr('href'), 800);		
+				
+		                //cancel the link default behavior
+				return false;
+			});
+
+
+			//resize all the items according to the new browser size
+			$(window).resize(function () {
+				
+				//call the resizePanel function
+				resizePanel();
+			});
+			
+		});
+
+		function resizePanel() {
+
+			//get the browser width and height
+			width = $(window).width();
+			height = $(window).height();
+
+			//get the mask width: width * total of items
+			mask_width = width * $('.item').length;
+				
+			//set the dimension	
+			$('#wrapper, .item').css({width: width, height: height});
+			$('#mask').css({width: mask_width, height: height});
+			
+			//if the item is displayed incorrectly, set it to the corrent pos
+			$('#wrapper').scrollTo($('a.selected').attr('href'), 0);
+				
+		}
+	</script>
+
+</body>
+</html>

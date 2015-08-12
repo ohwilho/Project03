@@ -1,0 +1,166 @@
+div.container {
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+
+div.container img {
+  height: 100vh;
+}
+
+div.container div.nav {
+  position: fixed;
+  width: 100%;
+}
+
+div.container div.nav ul {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  margin: 0 auto;
+  display: block;
+}
+
+div.container div.nav ul li {
+  display: inline-block;
+}
+
+div.container div.nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 20px;
+}
+
+div.container div.nav ul li a:hover {
+  color: orange;
+  background-color: black;
+}
+
+div.container div.nav div.subnav {
+  display: none;
+}
+
+div.container div.nav div.subnav:hover {
+  display: block;
+}
+
+div.container div.wrapper {
+  margin: 0 auto;
+  position: absolute;
+  top: 75%;
+  left: 15%;
+  width: 70%;
+  height: 500px;
+  background-color: papayaWhip;
+  padding: 20px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+div.container div.wrapper div.verbNav {
+  position: relative;
+}
+
+div.container div.wrapper ul {
+  background-color: rgba(0, 0, 0, 0.5);
+  margin: 0 auto;
+}
+
+div.container div.wrapper ul li {
+  display: inline-block;
+}
+
+div.container div.wrapper ul li ul {
+  display: none;
+  position: absolute;
+}
+
+div.container div.wrapper ul li:hover ul {
+  display: block;
+}
+
+div.container div.wrapper div.regulares {
+  border: 1px solid black;
+  background-color: #CCCCCC;
+  display: none;
+  padding: 5px;
+  width: 150px;
+}
+
+div.container02 {
+  background-image: url(https://download.unsplash.com/photo-1429305336325-b84ace7eba3b);
+  position: absolute;
+  width: calc(100vw * 3);
+  height: calc(100vh * 3);
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+div.intro {
+  background-color: white;
+  width: 50vw;
+  height: 50vh;
+  margin-top: calc(100vh / 4);
+  margin-left: calc(100vw / 4);
+}
+
+.item {
+  width: 100vw;
+  height: 100vh;
+  float: left;
+}
+
+.clear {
+  clear: both;
+}
+
+div.welcome {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  background-color: black;
+  top: 0;
+  left: 0;
+}
+
+div.home {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  background-color: #BADA55;
+  top: 100vh;
+  left: 100vw;
+}
+
+div.signs {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  background-color: yellow;
+  top: 0;
+  left: calc(100vw * 2);
+  z-index: 1;
+}
+
+div.planets {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  background-color: red;
+  top: 100vh;
+  left: calc(100vw * 2);
+}
+
+div.houses {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  background-color: blue;
+  left: calc(100vw * 2);
+  top: calc(100vh * 2);
+}
+
+body {
+  margin: 0;
+}

@@ -1,0 +1,66 @@
+body {
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	font-weight: 100;
+	color: white;
+	height: 100vh;
+	width: 100vw;
+	margin: 0;
+	padding: 0;
+}
+
+#wrapper {
+	width: 100vw;
+	height: 100vh;
+	position: absolute;
+	top: 0;
+	left: 0;
+	overflow: hidden;
+}
+
+	#mask {
+		width: 300vw;
+		height: 300vh;
+		background-image: url(https://download.unsplash.com/photo-1429305336325-b84ace7eba3b);
+		background-size: 100% 100%;
+	}
+
+	.item {
+		width: 100vw;
+		height: 100vh;
+		float: left;
+	}
+	
+	.content {
+		width: 75vh;
+		height: 75vh;
+		top: 10vh;
+		margin: 0 auto;
+		background-color: rgba(0,0,0,0.5);
+		position: relative;
+		border-radius: 20px;
+		padding: 10px 20px 10px 20px;
+	}
+
+	a.start {
+		color: black;
+		padding: 10px;
+		border-radius: 5px;
+		text-decoration: none;
+		background-color: yellow;
+	}
+
+	a.panel {
+		color: white;
+	}
+
+	a.panel:hover {
+		color: red;
+	}
+	
+	.selected {
+		font-weight: 700;
+	}
+
+	.clear {
+		clear: both;
+	}
